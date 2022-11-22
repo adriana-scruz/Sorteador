@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteio de Nomes</title>
+    <link rel="stylesheet" href="/style/drawer-number.css" />
+    <link
+      rel="shortcut icon"
+      href="/id-site/ico_sorteando.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div id="principal">
+      <header>
+        <a href="/home.html"
+          ><img class="return" src="/imagens/return.png" alt="to home"
+        /></a>
+        <nav>
+          <a href="/home.html">Home</a>
+          <a href="/paginas/sorteio_nomes.html">Sorteio de Nomes</a>
+          <a href="/paginas/sorteio__numeros.html">Sorteio de Números</a>
+        </nav>
+      </header>
+      <div class="quadro">
+        <div class="sorteador">
+          <h1>Qual o intervalo do sorteio?</h1>
+          <form action="">
+            <p>De</p>
+            <input type="number" name="quantidadenomes" id="min" />
+            <p>Até</p>
+            <input type="number" name="quantidadenomes" id="max" />
+            <input
+              type="button"
+              value="SORTEAR"
+              class="button"
+              onclick="drawer()"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="trofeu">
+          <img src="/imagens/trofeu.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>By Adriana Cruz</p>
+    </footer>
+  </body>
+  <script src="/js/drawer-number.js"></script>
+</html>

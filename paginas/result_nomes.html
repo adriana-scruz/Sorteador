@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteio de Nomes</title>
+    <link rel="stylesheet" href="/style/result-drawer-name.css" />
+    <link
+      rel="shortcut icon"
+      href="/id-site/ico_sorteando.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body onload="winner()">
+    <div id="principal">
+      <header>
+        <a href="/home.html"
+          ><img class="return" src="/imagens/return.png" alt="to home"
+        /></a>
+        <nav>
+          <a href="/home.html">Home</a>
+          <a href="/paginas/sorteio_nomes.html">Sorteio de Nomes</a>
+          <a href="/paginas/sorteio__numeros.html">Sorteio de Números</a>
+        </nav>
+      </header>
+      <div class="row">
+        <img class="victory" src="/imagens/victory.svg" alt="" />
+        <div class="column"><h2>O ganhador(a) foi:</h2></div>
+        <div class="column">
+          <h1 id="winner"></h1>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>By Adriana Cruz</p>
+    </footer>
+  </body>
+  <script src="/js/result-name.js"></script>
+</html>

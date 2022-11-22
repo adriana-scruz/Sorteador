@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+#principal {
+  background-color: #3a9eb4;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 750px;
+  border-radius: 30px;
+}
+
+.return {
+  width: 60px;
+  padding: 16px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.527));
+}
+
+nav {
+  float: right;
+  padding: 26px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row {
+  position: relative;
+  background-color: white;
+  width: 850px;
+  height: 270px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 115px;
+}
+
+h1 {
+  font-size: 72px;
+  padding-top: 90px;
+  color: #63e1fd;
+}
+
+.victory {
+  margin: auto;
+  max-width: 800px;
+  position: absolute;
+  padding-top: 150px;
+}
+
+footer {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}

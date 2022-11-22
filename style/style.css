@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+#principal {
+  background-color: #3a9eb4;
+  margin: min(80px, 5%);
+  height: 850px;
+  border-radius: 30px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 600px;
+  max-width: 100%;
+}
+
+header > h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* margin-top: -50px; */
+  margin-bottom: 30px;
+}
+
+input {
+  font-size: 2em;
+  border-radius: 16px;
+  background-color: rgba(254, 219, 65, 0.9);
+  border-style: none;
+  width: 204px;
+  height: 68px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.144);
+  transition-duration: 0.4s;
+}
+
+input:hover {
+  background-color: white;
+  color: black;
+  border-style: solid;
+  border-width: medium;
+  border-color: rgba(254, 219, 65, 0.9);
+}
+
+.container {
+  position: relative;
+  height: 150px;
+  margin: 0;
+  text-align: center;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.imagem {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.267));
+}
+
+.winner {
+  width: 300px;
+  max-width: 90%;
+}
+
+footer {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+#principal {
+  background-color: #3a9eb4;
+  margin: min(80px, 5%);
+  height: 750px;
+  border-radius: 30px;
+}
+
+.return {
+  width: 60px;
+  padding: 16px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.527));
+}
+
+nav {
+  float: right;
+  padding: 26px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+}
+
+.quadro {
+  position: relative;
+  background-color: white;
+  width: 70%;
+  height: 557px;
+  margin-left: 10%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
+}
+
+.sorteador {
+  padding-top: 80px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
+.sorteador > h1 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 32px;
+}
+
+#nomes {
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.titulo {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+form > input,
+textarea {
+  background-color: #c4c4c4;
+  border-color: #c4c4c4;
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.trofeu {
+  float: right;
+  margin-top: -303px;
+}
+
+input.button {
+  margin-top: 20px;
+}
+
+.button {
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.4em;
+  border-radius: 10px;
+  background-color: #ebd54c;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: #dbc323;
+  transition: all 0.8s;
+}
+
+footer {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
