@@ -12,5 +12,5 @@ jobs:
       with:
         args: -b mybuckettes-adri2022 -r us-east-1 --acl public-read --follow-symlinks --delete
       env:
-        AWS_ACCESS_KEY_ID: ${{ AKIAXDQM7MX2RKLXHJSM }}
-        AWS_SECRET_ACCESS_KEY: ${{ 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 }}
+        AWS_ACCESS_KEY_ID: "${{ AKIAXDQM7MX2RKLXHJSM }}"
+        AWS_SECRET_ACCESS_KEY: "${{ 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 }}"
