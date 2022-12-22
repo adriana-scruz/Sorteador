@@ -3,14 +3,19 @@ run-name: ${{ github.actor }} is my first GitHub Actions 🤩
 on: [push]
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Deploy to S3
-      uses: aws-actions/aws-s3-deploy@v1
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
       with:
-        args: -b mybuckettes-adri2022 -r us-east-1 --acl public-read --follow-symlinks --delete
-      env:
-        AWS_ACCESS_KEY_ID: "AKIAXDQM7MX2RKLXHJSM"
-        AWS_SECRET_ACCESS_KEY: "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"
+        aws-access-key-id: "AKIAXDQM7MX2RKLXHJSM"
+        aws-secret-access-key: "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"
+        aws-region: us-east-1
+
+    - name: Deploy static site to S3 bucket
+      run: aws s3 sync ./public/ s3://BUCKET_NAME --delete
+
